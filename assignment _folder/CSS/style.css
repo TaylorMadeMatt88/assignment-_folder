@@ -1,0 +1,312 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+} 
+
+/* Universal reset to eliminate default margin/padding on my web page */
+
+body {
+	background-color: #3D5052;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	font-family: "Poppins", sans-serif;
+} 
+
+/* Background color & font family for the whole page */
+
+.logo {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 10px;
+	width: 50%;
+}
+
+/* Logo (PNG file) placement on page */
+
+#navigation-bar ul {
+	list-style-type: none;
+	margin: auto;
+	padding: 0;
+	overflow: hidden;
+	background-color: #A8E0BF;
+	font-weight: 900;
+}
+
+#navigation-bar li {
+	background-color: #A8E0BF;
+}
+
+/* Navigation bar for website. An ID was used to stylise the navigation bar indivually as another ul list has been used on the site */
+
+ul {
+	list-style-type: none;
+	margin: auto;
+	padding: 0;
+	overflow: hidden;
+	background-color: #3D5052;
+}
+
+li {
+	float: left;
+}
+
+/* Placement of navigation bar list */
+
+li a {
+	display: block;
+	color: #3D5052;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+li a:hover:not(.home) {
+	background-color: #B4EBE8;
+}
+
+/* Colour change on cursor hover for the navigation bar */ 
+
+.material-icons {
+	float: right;
+	display: block;
+	color: #3D5052;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+/* Stylising of Google icons used in the navigation bar */
+
+.text {
+	margin: 20px;
+	padding: 20px;
+	background-color: #3D5052;
+	position: center;
+}
+
+/* Colour & position on text used on index page */
+
+.pixel {
+	margin: auto;
+	width: 50%;
+	border: 3px;
+	padding: 10px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	text-align: center;
+}
+
+/* Both product containers featuring shadowing to draw focus to them */
+
+.label {
+	padding: 10px;
+}
+
+/* Text padding for product containers */
+
+.bottom-container {
+	margin: 15px;
+	padding: 15px;
+}
+
+/* Margin & padding for bottom logo with external link */
+
+.about-us {
+	margin: 20px;
+	padding: 20px;
+	background-color: #3D5052;
+	position: center;
+}
+
+/* Positioning for main text on About page */
+
+.contact {
+	margin: 20px;
+	padding: 20px;
+	background-color: #3D5052;
+	position: center;
+}
+
+/* Positioning for main text on Contact page */
+
+.contact-form {
+	margin: 20px;
+	padding: 20px;
+	background-color: #3D5052;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	text-align: center;
+	color: #A8E0BF;
+}
+
+/* Stylising for for the main contact form container */
+
+input[type=text] {
+	background-color: #3D5052;
+	color: white;
+}
+
+/* Background & text colour for text input */
+
+input[type=email] {
+	background-color: #3D5052;
+	color: white;
+}
+
+/* Background & text colour for email input */
+
+input[type=number] {
+	background-color: #3D5052;
+	color: white;
+}
+
+/* Background & text colour for number input */
+
+textarea {
+	height: 200px;
+	width: 350px;
+	background-color: #3D5052;
+	color: white;
+}
+
+/* Background & text colour for text area */
+
+button, input[type="submit"] { 
+    border:1px solid #A8E0BF; 
+    color:#3D5052; 
+    background: #A8E0BF; 
+    padding:0.6em 1em;
+    font-size:1em; 
+    line-height:1; 
+    border-radius: 1.2em;
+    transition: color 0.2s ease-in-out, background 0.2s ease-in-out, border-color 0.2s ease-in-out;
+}
+button:hover, button:focus, button:active, input[type="submit"]:hover, input[type="submit"]:focus, input[type="submit"]:active {
+    background: #A7DBD8;
+    border-color:#69D2E7;
+    color:#000;
+    cursor: pointer;
+}
+
+/* Stylising for submit button to help it stand out. CSS from https://www.codehim.com/collections/javascript-shopping-cart-examples-with-demo/ */
+
+.shop {
+	margin: 20px;
+	padding: 20px;
+	background-color: #3D5052;
+	position: center;
+}
+
+/* Positioning for main text on Shop page */
+
+
+.product-container {
+	float: left;
+	width: 50%;
+}
+
+/* Positioning for the overall product container, sitting to the left of the shop page */
+
+.product {
+	padding:1em; 
+	border:1px; 
+	margin-right:1em; 
+	border-radius:5px;
+	margin-top: 10px;
+	background-color: #3D5052;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	text-align: center;
+
+}
+
+/* Div for each phone that's available for purchase. Box shadow used to draw user's attention to the product */
+
+.cart-container {
+	border:1px;
+	border-radius:5px;
+	margin-top:1em;
+	padding:1em;
+	float: right;
+	width: 50%;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	color: white;
+}
+
+/* Div for the cart container, floated to the right for placement alongside the product containers. */
+
+.cart-buttons {
+	width:auto;
+	margin-right:0;
+	margin-left:auto;
+	display:flex;
+	justify-content:flex-end;
+	padding:1em 0;
+}
+
+/* Styling for cart buttons on the Shop page*/
+
+#emptycart {
+	margin-right: 10px;
+}
+
+/* Margin for the empty cart button*/
+
+.message {
+	border: 1px;
+	background-color: #A8E0BF;
+	padding: 10px;
+	margin: 10px;
+	text-align: center;
+}
+
+/* */
+
+.text1 {
+	font-size: 30px;
+}
+
+/* Font sizing for product description on the Shop page */
+
+
+p {
+	text-align: center;
+	font-size: 200%;
+	color: white;
+}
+
+
+h1 {
+	text-align: center;
+	font-size: 200%;
+	color: #A8E0BF;
+	font-weight: 900;
+}
+
+
+h2 {
+	text-align: center;
+	font-size: 200%;
+	color: #A8E0BF;
+	font-weight: 900;
+}
+
+
+h3 {
+	text-align: center;
+	font-size: 200%;
+	color: #A8E0BF;
+	font-weight: 900;
+}
+
+
+h6 {
+	margin: 10px;
+	padding: 10px;
+	text-align: center;
+	width: 100%;
+	display: block;
+	color: white;
+}
+
+/* Stylising on p & h tags for various text on all of the website */
